@@ -20,7 +20,7 @@ import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import Project from "./pages/project";
-import Settings from "./pages/setting";
+// import Settings from "./pages/setting";
 import Services from "./components/services";
 import Modules from "./pages/module";
 import { LoginUser } from "./redux/Authslice.js";

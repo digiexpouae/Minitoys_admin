@@ -21,7 +21,7 @@ import { useSidebar } from "../context/SidebarContext";
 import SidebarWidget from "./SidebarWidget";
 
 import Project from '../components/project/project'
-import Settings from '../pages/setting'
+// import Settings from '../pages/setting'
 const navItems = [
   {
     icon: <GridIcon />,
