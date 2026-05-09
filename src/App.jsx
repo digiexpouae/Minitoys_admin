@@ -35,6 +35,7 @@ import Cookie from 'js-cookie'
 import ProtectedRoute from "./components/auth/protectedRoute";
 import AddSeller from "./components/Seller/addSelller";
 import AdminProtectedroute from './components/auth/adminProtectedRoute'
+import BulkProduct from './components/Product/addbulkProduct'
 export default function App() {
 
 
@@ -49,7 +50,7 @@ export default function App() {
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
             {/* <Route element={<ProtectedRoute />}> */}
-            <Route index path="/" element={<Home />} />
+            <Route index path="/" element={<ProtectedRoute><Home /> </ProtectedRoute>} />
 
             {/* Others Page */}
             <Route path="/profile" element={<ProtectedRoute><UserProfiles /> </ProtectedRoute>} />
@@ -60,6 +61,8 @@ export default function App() {
             <Route path="/add-product" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
             <Route path='/manage-products' element={<ProtectedRoute><ManageProducts /> </ProtectedRoute>} />
             <Route path="/update-product/:slug" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
+            <Route path="/add-bulk-products" element={<ProtectedRoute><BulkProduct /> </ProtectedRoute>} />
+
             <Route path="/order" element={<ProtectedRoute><Order /></ProtectedRoute>} />
 
             <Route path="/add-category" element={<AdminProtectedroute><AddCategory /></AdminProtectedroute>} />

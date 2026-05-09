@@ -115,7 +115,7 @@ export default function ManageProducts() {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 5
 
-  const token = Cookies.get("authToken")
+  const token = Cookies.get("adminToken")
 
   const navigate = useNavigate()
 
@@ -421,7 +421,7 @@ export default function ManageProducts() {
                     <tr key={product.id} className="hover:bg-blue-50/30 transition-colors duration-100">
                       <td className="px-6 py-4">
                         <img
-                          src={`${BASEURL}/${product.image}`}
+                          src={`${product.image}`}
                           alt={product.name}
                           className="w-16 h-16 object-cover rounded-lg border border-gray-200 shadow-sm"
                         />

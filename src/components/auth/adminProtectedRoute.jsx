@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { useState } from "react";
 
 const ProtectedRoute = ({ children }) => {
-    const token = Cookies.get("authToken");
+    const token = Cookies.get("adminToken");
     const [user, setuser] = useState(() => {
         const auth = localStorage.getItem('auth')
         const userRole = JSON.parse(auth)

@@ -32,7 +32,7 @@ export default function UserDropdown() {
   const notify = () => toast.success("You are Successfully Logged out.")
 
   const handleLoggedOut = () => {
-    Cookies.remove('authToken')
+    Cookies.remove('adminToken')
     localStorage.removeItem('auth')
     localStorage.removeItem('token')
     notify()

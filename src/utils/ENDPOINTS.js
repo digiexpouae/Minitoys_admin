@@ -15,7 +15,9 @@ const ENDPOINTS = {
     PRODUCTS: 'v1/product',
     USERS: 'v1/user',
     ORDER: 'v1/order',
-    CATEGORY: 'v1/category'
+    CATEGORY: 'v1/category',
+    BULK_PRODUCTS: 'v1/product/bulkCreate',
+
 
   }
 

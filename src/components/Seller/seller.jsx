@@ -20,7 +20,7 @@ const ManageSeller = () => {
 
 
   const [sellers, setSellers] = useState(null)
-  const token = Cookies.get("authToken")
+  const token = Cookies.get("adminToken")
 
 
   const applyFilters = (status, search) => {

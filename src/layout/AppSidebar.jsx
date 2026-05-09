@@ -39,7 +39,8 @@ const navItems = [
     name: "Product",
     path: "/product",
     subItems: [{ name: "Add Product", path: "/add-product", pro: false },
-    { name: "Manage Products", path: "/manage-products", pro: false }
+    { name: "Manage Products", path: "/manage-products", pro: false },
+    { name: "Add Bulk Products", path: "/add-bulk-products", pro: false }
 
 
     ],

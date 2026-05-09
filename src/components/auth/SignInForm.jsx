@@ -50,7 +50,7 @@ export default function SignInForm() {
       console.log("Login response:", response);
       if (response.success) {
         const token = response.token;
-        Cookies.set("authToken", token, {
+        Cookies.set("adminToken", token, {
           expires: 1,
           secure: false,
           sameSite: "Lax"

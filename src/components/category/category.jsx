@@ -268,7 +268,7 @@ export default function AddCategory() {
               {!mainPreview && formValues.image &&
                 (
                   <div className="relative inline-block group">
-                    <img src={`${BASEURL}/${formValues.image}`} alt="Main preview" className="w-24 h-24 object-cover rounded-lg border border-gray-200 shadow-sm" />
+                    <img src={formValues.image} alt="Main preview" className="w-24 h-24 object-cover rounded-lg border border-gray-200 shadow-sm" />
                     <button
                       onClick={() => handleDeleteImage(id)}
                       className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 hover:bg-red-400 text-white rounded-full flex items-center justify-center text-xs shadow transition-colors"

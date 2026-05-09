@@ -162,6 +162,7 @@ export default function ManageCategory() {
   };
   const handleEdit = async (id) => {
     console.log("Edit works")
+    console.log("id", id)
     return navigate(`/update-category/${id}`)
   }
 
@@ -220,9 +221,9 @@ export default function ManageCategory() {
 
 
 
-  const token = Cookies.get("authToken")
+  const token = Cookies.get("adminToken")
   const FetchCategory = async () => {
-    const response = await api.get({ url: `${ENDPOINTS.OTHER.CATEGORY}/all` })
+    const response = await api.get({ url: `${ENDPOINTS.OTHER.CATEGORY}/admin/all` })
     // console.log("response", response)
     setcategory(response.categories)
     // }
@@ -369,7 +370,7 @@ export default function ManageCategory() {
                         <td className="px-6 py-4 text-center">
                           <div className="flex justify-center">
                             {cat.image
-                              ? <img src={`${BASEURL}/${cat.image}`} alt={cat.name} className="w-16 h-16 object-cover rounded-lg border border-gray-200 shadow-sm" />
+                              ? <img src={cat.image} alt={cat.name} className="w-16 h-16 object-cover rounded-lg border border-gray-200 shadow-sm" />
                               : <NoImagePlaceholder />
                             }
                           </div>
@@ -431,7 +432,7 @@ export default function ManageCategory() {
                 <p className="px-6 py-16 text-center text-gray-400 text-sm">No categories found.</p>
               ) : (
                 category.map((cat) => (
-                  <TreeNode key={cat.id} id={cat.id} category={cat} onToggleStatus={handleToggleStatus} onDelete={handleDelete} onEdit={handleEdit} image={`${BASEURL}/${cat.image}`} />
+                  <TreeNode key={cat.id} id={cat.id} category={cat} onToggleStatus={handleToggleStatus} onDelete={handleDelete} onEdit={handleEdit} image={cat.image} />
                 ))
               )}
             </div>
