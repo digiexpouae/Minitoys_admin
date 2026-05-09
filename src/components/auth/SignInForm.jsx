@@ -11,7 +11,7 @@ import ENDPOINTS from "../../utils/ENDPOINTS";
 import toast, { Toaster } from "react-hot-toast";
 // import { setUser } from "../../redux/user";
 import { useDispatch } from "react-redux";
-import { LoginUser } from "../../redux/AuthSlice";
+import { LoginUser } from "../../redux/Authslice.js";
 // import { showToast } from "../../utils/showToast";
 import Cookies from "js-cookie";
 export default function SignInForm() {

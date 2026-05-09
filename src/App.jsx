@@ -23,7 +23,7 @@ import Project from "./pages/project";
 import Settings from "./pages/setting";
 import Services from "./components/services";
 import Modules from "./pages/module";
-import { LoginUser } from "./redux/AuthSlice";
+import { LoginUser } from "./redux/Authslice.js";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import ManageProducts from "./components/Product/manageProduct";

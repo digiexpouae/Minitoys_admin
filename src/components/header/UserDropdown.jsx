@@ -3,7 +3,7 @@ import { DropdownItem } from "../ui/dropdown/DropdownItem";
 import { Dropdown } from "../ui/dropdown/Dropdown";
 import { Link, Navigate } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
-import { LogoutUser } from "../../redux/AuthSlice";
+import { LogoutUser } from "../../redux/Authslice.js";
 import { User } from "lucide-react";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";

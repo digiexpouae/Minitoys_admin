@@ -1,6 +1,6 @@
 import axios from "axios";
 import store from "../redux/store";
-import { LogoutUser } from "../redux/AuthSlice";
+import { LogoutUser } from "../redux/Authslice.js";
 // base url
 // adding url method url concatenate with base url
 const axiosInstance = axios.create({
