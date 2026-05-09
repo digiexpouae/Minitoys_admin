@@ -207,7 +207,7 @@ export default function AddProduct() {
   };
 
   const FetchCategory = async () => {
-    const response = await api.get({ url: `${ENDPOINTS.OTHER.CATEGORY}/all` })
+    const response = await api.get({ url: `${ENDPOINTS.OTHER.CATEGORY}/admin/all` })
     // console.log("response", response)
     setCategory(response.categories)
     // }
