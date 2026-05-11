@@ -11,7 +11,6 @@ const ProtectedRoute = ({ children }) => {
         return userRole
     })
 
-    console.log("userrole", user)
 
     if (!token) {
         localStorage.removeItem("auth")
